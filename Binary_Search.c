@@ -1,13 +1,10 @@
-
 //      Program to implement Binary Search in C
-
 #include<stdio.h>
 void main(){
     int arr[10], low, high, mid, n, i, key, index = -1; //Index is set to -1 incase the element is not present in the given array
 
     printf("Enter the array size: ");
     scanf("%d",&n);
-
     printf("Enter the array elements: ");
     for ( i = 0; i < n; i++)
     {
@@ -32,7 +29,7 @@ void main(){
         }
         else
         {
-            index  = mid ;
+            index = mid ;
             break;
         }
     }

@@ -1,6 +1,5 @@
 
     // Bubble Sort using C
-
 #include<stdio.h>
 void main(){
     int a[10],n, i, j;
@@ -9,7 +8,7 @@ void main(){
     printf("Enter the array elements: ");
     for (i = 0; i < n; i++)
     {
-        scanf("%d", a[i]);
+        scanf("%d", &a[i]);
     }
     a[n];
     //  Sorting using Bubble Sort
@@ -20,15 +19,13 @@ void main(){
             if (a[j] > a[j+1])
             {
                 int temp = a[j];
-                a[j+1] = a[j];
-                a[j] = temp;
+                a[j] = a[j+1];
+                a[j+1] = temp;
 
             }
         }  
     }
 //  Printing the sorted array
-    printf("hello");
-
     printf("The sorted array is... ");
     for (i = 0; i < n; i++)
     {
